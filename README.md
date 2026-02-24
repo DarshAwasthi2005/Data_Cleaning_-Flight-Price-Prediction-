@@ -11,23 +11,24 @@ Flight price data often contains missing values, inconsistent formats, categoric
 
 The dataset includes information related to commercial flights such as:
 
-Airline name
+ Airline name
 
-Source city
+ Source city
 
-Destination city
+ Destination city
 
-Date of journey
+ Date of journey
 
-Departure and arrival time
+ Departure and arrival time
 
-Flight duration
+ Flight duration
 
-Number of stops
+ Number of stops
 
-Ticket price (target variable)
+ Ticket price (target variable)
 
 The raw dataset is assumed to be noisy and unstructured, requiring extensive preprocessing.
+
 
 🧹 Data Cleaning Steps Performed
 1️⃣ Handling Missing Values
@@ -37,6 +38,7 @@ Checked for null or empty values in all columns
 Removed rows with critical missing information (e.g., price)
 
 Imputed or discarded non-essential missing values when appropriate
+
 
 2️⃣ Feature Formatting & Transformation
 
@@ -51,6 +53,7 @@ Month
 Converted duration into numerical format (total minutes)
 
 Standardized time formats for departure and arrival times
+
 
 3️⃣ Categorical Data Processing
 
@@ -68,21 +71,25 @@ Number of stops
 
 Used label encoding / one-hot encoding depending on feature type
 
+
 4️⃣ Outlier Detection & Removal
 
 Identified extreme values in ticket prices
 
 Removed or capped unrealistic price values to reduce model bias
 
+
 5️⃣ Duplicate Records
 
 Detected and removed duplicate rows to prevent data leakage
+
 
 6️⃣ Final Dataset Preparation
 
 Verified data types for all columns
 
 Ensured no missing values remained
+
 
 
 🛠️ Technologies Used
@@ -92,6 +99,7 @@ Python
 Pandas
 
 NumPy
+
 
 🚀 Next Steps
 
